@@ -6,6 +6,9 @@
   <title>Lavanya Gunreddi | Technical Writer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       font-family: 'Inter', sans-serif;
       margin: 0;
@@ -13,6 +16,23 @@
       background: #fff;
       color: #333;
       line-height: 1.6;
+    }
+    nav {
+      background: #2c3e50;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     header {
       padding: 4rem 2rem 2rem;
@@ -62,6 +82,16 @@
 </head>
 <body>
 
+<nav>
+  <a href="#intro">Intro</a>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#samples">Recent Work</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <header>
   <h1>Lavanya Gunreddi</h1>
   <p>Technical Writer | AI Strategist | Cloud & Database Specialist</p>
@@ -69,59 +99,59 @@
 
 <main>
   <section id="intro">
-    <h2>Clarity through content</h2>
-    <p>I build developer-facing documentation and content systems that turn complexity into clarity—API guides, tutorials, and AI-assisted workflows that improve usability and reduce support load. At AWS, Cisco, and SAP, I’ve led projects that blend technical precision with user empathy.</p>
+    <h2>Documentation that connects</h2>
+    <p>I create content that bridges technical depth with user clarity. Whether it’s cloud infrastructure, database engines, or financial platforms, I bring precision, empathy, and structure to every document. My work spans release notes, API references, UI copy, and AI-enhanced workflows that improve usability and reduce support load.</p>
   </section>
 
   <section id="about">
     <h2>About Me</h2>
-    <p>I’m a documentation leader with 11+ years of experience in cloud services, networking, and financial software. I specialize in translating complex systems into clear, scalable content. My work spans structured authoring, docs-as-code pipelines, and prompt engineering for AI-powered workflows. I care deeply about editorial quality, accessibility, and mentoring writers to grow with evolving tools and standards.</p>
+    <p>With over a decade of experience in technical writing, I’ve contributed to global teams at AWS, Cisco, SAP, and Imagine Learning. I specialize in cloud services, networking, and enterprise software, and I’ve recently expanded into prompt engineering and AI-powered documentation strategies. I thrive on collaboration, clarity, and continuous learning.</p>
   </section>
 
   <section id="experience">
-    <h2>Work Experience</h2>
+    <h2>Experience</h2>
 
     <h3>Amazon Web Services (AWS) – Technical Writer</h3>
     <p><em>2022–Present</em></p>
     <ul>
-      <li>Lead writer for Aurora and RDS PostgreSQL services.</li>
-      <li>Contributed to Oracle Database@AWS documentation.</li>
+      <li>Lead writer for Aurora and RDS PostgreSQL engines.</li>
+      <li>Contributed to Oracle Database@AWS documentation during private preview.</li>
       <li>Applied AI tools and prompt engineering to accelerate content creation and improve clarity.</li>
-      <li>Improved customer experience through usability research and multimedia enhancements.</li>
+      <li>Enhanced customer experience through usability research and multimedia content.</li>
     </ul>
 
     <h3>Imagine Learning – Senior Technical Writer (Contract)</h3>
     <ul>
-      <li>Created product-agnostic knowledge base articles using Zendesk.</li>
+      <li>Created reusable knowledge base articles across multiple products.</li>
       <li>Documented weekly releases and built glossaries for internal tools.</li>
+      <li>Published content using Zendesk and collaborated with developers and PMs.</li>
     </ul>
 
     <h3>Cisco – Lead Technical Writer (via Tech Mahindra)</h3>
-    <p><em>2012–2017</em></p>
     <ul>
       <li>Managed documentation for Cisco Prime Provisioning.</li>
-      <li>Implemented DITA standards and created admin, CLI, and integration guides.</li>
-      <li>Received Tech Mahindra’s Pat on the Back award for excellence.</li>
+      <li>Implemented DITA standards and authored admin, CLI, and integration guides.</li>
+      <li>Contributed to QA efforts and created video tutorials for internal teams.</li>
     </ul>
 
     <h3>SAP Labs – Information Developer (via Talent Pro)</h3>
-    <p><em>2010–2012</em></p>
     <ul>
       <li>Developed embedded UI guidance and technical manuals for SAP Blueprinting.</li>
-      <li>Created video tutorials and conducted customer interviews for feedback.</li>
+      <li>Created developer guides, release notes, and instructional videos.</li>
+      <li>Gathered user feedback through interviews and improved documentation quality.</li>
     </ul>
 
     <h3>Shinsei Bank, Japan – Associate Consultant (via Polaris)</h3>
-    <p><em>2006–2008</em></p>
     <ul>
       <li>Authored documentation for Orbi Invest and Lending platforms.</li>
-      <li>Received Spot Excellence award for UI improvements and user experience.</li>
+      <li>Improved UI and user experience, earning a Spot Excellence award.</li>
+      <li>Managed version control and project maintenance using ClearCase.</li>
     </ul>
   </section>
 
-  <section id="featured-docs">
-    <h2>Featured Documentation</h2>
-    <p>Since day one at AWS, I've been working on RDS and Aurora PostgreSQL engines. I've authored various user-facing documentation, including release notes, console screen reviews, and API references. Here are a few samples:</p>
+  <section id="samples">
+    <h2>Recent Work Samples</h2>
+    <p>Here are a few examples of user-facing content I’ve authored for AWS:</p>
 
     <h3>Aurora PostgreSQL</h3>
     <ul>
