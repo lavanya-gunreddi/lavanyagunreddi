@@ -44,21 +44,18 @@
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
     }
-    header p {
+    header h1 a {
       font-size: 1.2rem;
-      color: #666;
-    }
-    .icon-links {
-      margin-top: 1rem;
-    }
-    .icon-links a {
-      margin: 0 1rem;
-      font-size: 1.5rem;
+      margin-left: 0.5rem;
       color: #333;
       text-decoration: none;
     }
-    .icon-links a:hover {
+    header h1 a:hover {
       color: #007acc;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #666;
     }
     main {
       max-width: 900px;
@@ -76,9 +73,6 @@
     h3 {
       margin-top: 1.5rem;
       color: #444;
-    }
-    ul {
-      padding-left: 1.2rem;
     }
     a {
       color: #007acc;
@@ -104,14 +98,13 @@
   <a href="#education">Education</a>
 </nav>
 
-<header> 
+<header>
   <h1>
-  Lavanya Gunreddi
-  <a href="https://www.linkedin.com/in/lavanya-gunreddi-22403729/" target="_blank" style="margin-left: 0.5rem; font-size: 1.2rem; color: #007acc;">
-    <i class="fab fa-linkedin"></i>
-  </a>
-</h1>
-  <p>Senior Technical Writer | PostgreSQL Docs Specialist | Cloud & AI Content Strategist</p>  
+    Lavanya Gunreddi
+    <a href="mailto:lavanya.gunreddi@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/lavanya-gunreddi-22403729/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </h1>
+  <p>Technical Writer | PostgreSQL Docs Specialist | Cloud & AI Content Strategist</p>
 </header>
 
 <main>
@@ -121,9 +114,7 @@
   </section>
 
   <section id="about">
-    <h2>
-      About Me            
-    </h2>
+    <h2>About Me</h2>
     <p>With over a decade of experience in technical writing, I’ve contributed to global teams at AWS, Cisco, SAP, and Imagine Learning. I specialize in cloud services, networking, and enterprise software, and I’ve recently expanded into prompt engineering and AI-powered documentation strategies. I thrive on collaboration, clarity, and continuous learning.</p>
   </section>
 
@@ -132,40 +123,19 @@
 
     <h3>Amazon Web Services (AWS) – Technical Writer</h3>
     <p><em>2022–Present</em></p>
-    <ul>
-      <li>Lead writer for Aurora and RDS PostgreSQL engines.</li>
-      <li>Contributed to Oracle Database@AWS documentation during private preview.</li>
-      <li>Applied AI tools and prompt engineering to accelerate content creation and improve clarity.</li>
-      <li>Enhanced customer experience through usability research and multimedia content.</li>
-    </ul>
+    <p>As the lead writer for Aurora and RDS PostgreSQL engines, I authored and maintained core documentation that supports developers and DBAs. I contributed to the Oracle Database@AWS launch during its private preview phase, collaborating closely with engineering teams. I integrated AI tools and prompt engineering into our workflows to accelerate content creation and improve clarity. My work also included usability research and multimedia content to enhance the customer experience.</p>
 
     <h3>Imagine Learning – Senior Technical Writer (Contract)</h3>
-    <ul>
-      <li>Created reusable knowledge base articles across multiple products.</li>
-      <li>Documented weekly releases and built glossaries for internal tools.</li>
-      <li>Published content using Zendesk and collaborated with developers and PMs.</li>
-    </ul>
+    <p>I created reusable knowledge base articles across multiple products and documented weekly releases. I built glossaries for internal tools and published content using Zendesk, working closely with developers and product managers to ensure accuracy and consistency.</p>
 
     <h3>Cisco – Lead Technical Writer (via Tech Mahindra)</h3>
-    <ul>
-      <li>Managed documentation for Cisco Prime Provisioning.</li>
-      <li>Implemented DITA standards and authored admin, CLI, and integration guides.</li>
-      <li>Contributed to QA efforts and created video tutorials for internal teams.</li>
-    </ul>
+    <p>I managed documentation for Cisco Prime Provisioning, implemented DITA standards, and authored admin, CLI, and integration guides. I also contributed to QA efforts and created video tutorials to support internal teams.</p>
 
     <h3>SAP Labs – Information Developer (via Talent Pro)</h3>
-    <ul>
-      <li>Developed embedded UI guidance and technical manuals for SAP Blueprinting.</li>
-      <li>Created developer guides, release notes, and instructional videos.</li>
-      <li>Gathered user feedback through interviews and improved documentation quality.</li>
-    </ul>
+    <p>I developed embedded UI guidance and technical manuals for SAP Blueprinting. My work included developer guides, release notes, and instructional videos. I conducted user interviews to gather feedback and improve documentation quality.</p>
 
     <h3>Shinsei Bank, Japan – Associate Consultant (via Polaris)</h3>
-    <ul>
-      <li>Authored documentation for Orbi Invest and Lending platforms.</li>
-      <li>Improved UI and user experience, earning a Spot Excellence award.</li>
-      <li>Managed version control and project maintenance using ClearCase.</li>
-    </ul>
+    <p>I authored documentation for Orbi Invest and Lending platforms, improved UI and user experience, and earned a Spot Excellence award. I also managed version control and project maintenance using ClearCase.</p>
   </section>
 
   <section id="samples">
@@ -173,27 +143,21 @@
     <p>Here are a few examples of user-facing content I’ve authored for AWS:</p>
 
     <h3>Aurora PostgreSQL</h3>
-    <ul>
-      <li><a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendix.PostgreSQL.CommonDBATasks.TOAST_OID.html" target="_blank">TOAST OID Handling</a></li>
-      <li><a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-query-performance.html" target="_blank">Babelfish Query Performance</a></li>
-    </ul>
+    <p>
+      <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Appendix.PostgreSQL.CommonDBATasks.TOAST_OID.html" target="_blank">TOAST OID Handling</a><br/>
+      <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-query-performance.html" target="_blank">Babelfish Query Performance</a>
+    </p>
 
     <h3>RDS PostgreSQL</h3>
-    <ul>
-      <li><a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreSQL.optimizedreads.html" target="_blank">Optimized Reads</a></li>
-      <li><a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Concepts.General.FeatureSupport.LogicalReplication.html" target="_blank">Logical Replication Support</a></li>
-    </ul>
+    <p>
+      <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreSQL.optimizedreads.html" target="_blank">Optimized Reads</a><br/>
+      <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Concepts.General.FeatureSupport.LogicalReplication.html" target="_blank">Logical Replication Support</a>
+    </p>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
-    <ul>
-      <li>Cloud: AWS EC2, S3, RDS, Aurora, IAM</li>
-      <li>Languages: HTML, XML, DITA, JavaScript, JSP</li>
-      <li>Tools: FrameMaker, MadCap Flare, Oxygen XML, Zendesk, GitHub</li>
-      <li>Version Control: Git, GitHub, GitLab, Perforce</li>
-      <li>AI & Prompt Engineering: Applied GenAI tools for documentation workflows</li>
-    </ul>
+    <p>I work extensively with AWS services including EC2, S3, RDS, Aurora, and IAM. I write in HTML, XML, DITA, JavaScript, and JSP, and use tools like FrameMaker, MadCap Flare, Oxygen XML, Zendesk, and GitHub. I manage version control with Git, GitHub, GitLab, and Perforce. I also apply GenAI tools and prompt engineering to streamline documentation workflows and improve clarity.</p>
   </section>
 
   <section id="education">
@@ -204,9 +168,8 @@
 </main>
 
 <footer>
-  &copy; 2025 Lavanya Gunredd
+  &copy; 2025 Lavanya Gunreddi. Crafted with clarity.
+</footer>
 
-
-
-
-
+</body>
+</html>
