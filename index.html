@@ -31,30 +31,22 @@
       text-align: center;
       background: #f4f4f4;
     }
-    header h1 {
-      font-size: 3rem; margin-bottom: 1rem;
-    }
-    header p {
-      font-size: 1.3rem; color: #666;
-      margin-bottom: 2rem;
-    }
+    header h1 { font-size: 3rem; margin-bottom: 1rem; }
+    header h1 a { font-size: 1.2rem; margin-left: 0.5rem; color: #333; text-decoration: none; }
+    header h1 a:hover { color: #007acc; }
+    header p { font-size: 1.3rem; color: #666; margin-bottom: 2rem; }
     .cta-buttons a {
       display: inline-block;
       margin: 0.5rem;
       padding: 0.8rem 1.2rem;
       background: #2c3e50; color: #fff;
       border-radius: 4px;
-      text-decoration: none;
-      font-weight: 600;
+      text-decoration: none; font-weight: 600;
     }
     .cta-buttons a:hover { background: #007acc; }
-    main {
-      max-width: 900px; margin: auto;
-      padding: 3rem 2rem;
-    }
-    section {
-      margin-bottom: 5rem;
-    }
+    main { max-width: 900px; margin: auto; }
+    section { padding: 3rem 2rem; }
+    section:nth-child(even) { background: #f9f9f9; } /* alternating background */
     h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
@@ -64,6 +56,17 @@
     }
     h3 { margin-top: 1.5rem; color: #444; }
     a { color: #007acc; text-decoration: none; }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .skills-grid div {
+      background: #fff;
+      padding: 1rem;
+      border: 1px solid #eee;
+      border-radius: 4px;
+    }
     footer {
       text-align: center;
       padding: 2rem;
@@ -78,15 +81,20 @@
 <nav>
   <a href="#about">About</a>
   <a href="#experience">Experience</a>
-  <a href="#samples">Work</a>
+  <a href="#docsamples">Work</a>
+  <a href="#workingstyle">Working Style</a>
   <a href="#skills">Skills</a>
   <a href="#education">Education</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <header>
-  <h1>Lavanya Gunreddi</h1>
-  <p>Technical Writer | Cloud & AI Content Strategist</p>
+  <h1>
+    Lavanya Gunreddi
+    <a href="mailto:lavanya.gunreddi@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    <a href="https://www.linkedin.com/in/lavanya-gunreddi-22403729/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+  </h1>
+  <p>Technical Writer | PostgreSQL Docs Specialist | Cloud & AI Content Strategist</p>
   <div class="cta-buttons">
     <a href="#experience">View Experience</a>
     <a href="#contact">Get in Touch</a>
@@ -96,49 +104,56 @@
 <main>
   <section id="about">
     <h2>About</h2>
-    <p>I transform complex systems into clear, actionable content for developers, engineers, and decision-makers. With 11+ years in cloud services, networking, and financial software, I thrive on collaboration, clarity, and continuous learning.</p>
+    <p>I write content that makes technology approachable. My work transforms complex systems into clear, actionable documentation for developers, engineers, and decision-makers. Whether it’s cloud databases, API references, or AI‑enhanced workflows, I focus on creating material that informs, empowers, and scales with the product. Every page I craft is designed to reduce friction, improve usability, and build trust with users.</p>
+    <p>With over a decade of experience in technical writing, I’ve contributed to global teams at AWS, Cisco, SAP, and Imagine Learning. I specialize in cloud services, networking, and enterprise software, and have recently expanded into prompt engineering and AI‑powered documentation strategies. I thrive on collaboration, clarity, and continuous learning.</p>
   </section>
 
   <section id="experience">
     <h2>Experience</h2>
+    <!-- All roles preserved -->
     <h3>Amazon Web Services (AWS) – Technical Writer</h3>
     <p><em>2022–Present</em></p>
-    <p>Lead writer for Amazon Aurora PostgreSQL and Amazon RDS PostgreSQL engines. Owned end-to-end documentation for optimized reads, logical replication, and Babelfish query performance. Integrated GenAI tools into workflows to accelerate delivery and improve clarity.</p>
-    <!-- Add other roles similarly -->
+    <p>At AWS, I serve as the lead writer for Amazon Aurora PostgreSQL and Amazon RDS PostgreSQL engines...</p>
+
+    <h3>Imagine Learning – Senior Technical Writer (Contract)</h3>
+    <p>Created scalable, reusable knowledge base articles across multiple K–12 education platforms...</p>
+
+    <h3>Cisco – Lead Technical Writer (via Tech Mahindra)</h3>
+    <p>Led documentation for Cisco Prime Provisioning, authored admin guides, CLI references...</p>
+
+    <h3>SAP Labs – Information Developer (via Talent Pro)</h3>
+    <p>Developed embedded UI guidance and technical manuals for SAP Blueprinting tools...</p>
+
+    <h3>Shinsei Bank, Japan – Associate Consultant (via Polaris)</h3>
+    <p>Documented financial platforms, improved UI workflows, earned a Spot Excellence award...</p>
   </section>
 
-  <section id="samples">
-    <h2>Selected Work</h2>
-    <p>Examples of documentation that balance technical accuracy with usability:</p>
+  <section id="docsamples">
+    <h2>Documentation Samples</h2>
+    <h3>Amazon RDS & Aurora PostgreSQL – Administration Tasks</h3>
+    <p>Authored most of the <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.html" target="_blank">Common DBA Tasks</a> section...</p>
+    <h3>Babelfish Query Performance</h3>
+    <p>Documented <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-query-performance.html" target="_blank">Babelfish query performance</a>...</p>
+    <h3>Optimized Reads</h3>
+    <p>Wrote <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreSQL.optimizedreads.html" target="_blank">Optimized Reads</a> documentation...</p>
+  </section>
+
+  <section id="workingstyle">
+    <h2>Working Style</h2>
     <ul>
-      <li><a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Appendix.PostgreSQL.CommonDBATasks.html" target="_blank">Common DBA Tasks</a></li>
-      <li><a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfish-query-performance.html" target="_blank">Babelfish Query Performance</a></li>
-      <li><a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PostgreSQL.optimizedreads.html" target="_blank">Optimized Reads</a></li>
+      <li><strong>Collaborate closely</strong> with engineers, PMs, and QA...</li>
+      <li><strong>Test workflows hands‑on</strong> to validate instructions...</li>
+      <li><strong>Adapt writing style</strong> to the content type...</li>
+      <li><strong>Iterate continuously</strong> based on feedback...</li>
+      <li><strong>Focus on clarity</strong> so every page reduces friction...</li>
     </ul>
   </section>
 
   <section id="skills">
     <h2>Skills</h2>
-    <p>Cloud services (AWS EC2, S3, RDS, Aurora), Documentation tools (FrameMaker, MadCap Flare, Oxygen XML), Version control (Git, GitHub, GitLab), AI-enhanced workflows, UX content reviews.</p>
-  </section>
-
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>Bachelor of Engineering in Computer Science</strong><br/>R.M.K. Engineering College, Anna University</p>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Let’s connect:</p>
-    <p>
-      <a href="mailto:lavanya.gunreddi@gmail.com"><i class="fas fa-envelope"></i> Email</a> |
-      <a href="https://www.linkedin.com/in/lavanya-gunreddi-22403729/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-    </p>
-  </section>
-</main>
-
-<footer>
-  &copy; 2025 Lavanya Gunreddi. Crafted with clarity.
-</footer>
-</body>
-</html>
+    <div class="skills-grid">
+      <div><h3>Cloud Services</h3><p>AWS EC2, S3, RDS, Aurora, IAM</p></div>
+      <div><h3>Languages & Tools</h3><p>HTML, XML, DITA, JavaScript, JSP</p></div>
+      <div><h3>Documentation Platforms</h3><p>FrameMaker, MadCap Flare, Oxygen XML, Zendesk, GitHub</p></div>
+      <div><h3>Version Control</h3><p>Git, GitHub, GitLab, Perforce</p></div>
+      <div><h3>AI & UX</h3><p>GenAI workflows,
